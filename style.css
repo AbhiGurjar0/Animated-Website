@@ -1,0 +1,248 @@
+* {
+    padding: 0;
+    margin: 0;
+    /* font-family: boldfont; */
+}
+
+@font-face {
+    font-family: boldfont;
+    src: url(Resources/NeueHaasDisplayBold.ttf);
+}
+
+@font-face {
+    font-family: lightfont;
+    src: url(Resources/NeueHaasDisplayLight.ttf);
+}
+
+@font-face {
+    font-family: mediumfont;
+    src: url(Resources/NeueHaasDisplayThin.ttf);
+}
+
+@font-face {
+    font-family: thinfont;
+    src: url(Resources/NeueHaasDisplayRoman.ttf);
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+nav {
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    box-sizing: border-box;
+    padding: 2vw 10vw;
+    background-color: #111111;
+
+}
+#main{
+    height:100%;
+    width:100%;
+}
+
+nav .options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+
+}
+nav .options div h4{
+    padding: 1vw 2vw;
+    font-size: 1vw;
+    font-weight: 200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+nav .options div:hover h4:not(.drop) {
+    color: #0DA34E;
+    cursor: pointer;
+}
+
+nav .options svg {
+    width: 1vw;
+    height: 1vw;
+    justify-content: center;
+    align-items: center;
+    transition: all ease .3s;
+}
+
+nav .talk {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+    border: none;
+    background-color: #0DA34E;
+    padding: .5vw .8vw;
+    border-radius: 10vw;
+    margin-left: 1vw;
+}
+
+nav .dropdown {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    background-color: aliceblue;
+    gap: 1vw;
+    color: #102017;
+    top: 80%;
+    right: 45%;
+    width: 10vw;
+    border-radius: 1vw;
+    font-family: thinfont;
+    font-weight: 200;
+    font-size: .8vw;
+    padding: 2vw 1.5vw;
+    line-height: 1.5vw;
+    display: none;
+    
+   
+
+}
+
+.line {
+    height: .05vw;
+    opacity: 0.2;
+    width: 100%;
+    background-color: #111111;
+    margin-top: .4vw;
+}
+
+.drop h4:hover {
+    background-color: #3D3D3D;
+    border: none;
+    border-radius: 5vw;
+    cursor:context-menu;
+}
+.drop h4:hover svg {
+    rotate:180deg;
+}
+
+nav:hover .dropdown{
+    /* height: auto; */
+    display: block;
+    /* opacity: 1; */
+}
+ 
+
+
+#first {
+    box-sizing: border-box;
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 5vw;
+    background-color: #111111;
+    color: white;
+    padding: 0 10vw;
+
+}
+
+#first .text {
+    font-size: 2.5vw;
+    /* text-transform: uppercase; */
+}
+
+#first .bottom {
+    font-family: thinfont;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2vw;
+}
+
+#first .bottom span {
+
+    font-family: thinfont;
+    color: #102017;
+    border: 1px solid #102017;
+    border-radius: 2vw;
+    padding: .2vw .5vw;
+    background-color: #9cf3c3;
+}
+#second{
+    box-sizing: border-box;
+    width:100vw;
+    height:100vh;
+    background-color:#111111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10vw;
+}
+#second .video{
+    width:100%;
+    height:100%;
+    background-color: bisque;
+    border-radius:3vw;
+    
+}
+#third{
+    box-sizing: border-box;
+    width:100vw;
+    height:100vh;
+    padding:5vw 10vw;
+    color:white;
+    background-color: #111111;
+}
+#third .upper{
+    display: flex;
+    justify-content: center;
+    gap:.5vw;
+    height:50%;
+}
+#third .upper ._box{
+    box-sizing: border-box;
+    width:33%;
+    height:100%;
+    background-color:#3D3D3D;
+    border-radius: 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding:2vw 0  2vw 2vw;
+}
+#third .bottom{
+    display: flex;
+    justify-content: center;
+    gap:1vw;
+    height:50%;
+    margin-top: 1vw;
+}
+#third .bottom ._box{
+    box-sizing: border-box;
+    width:49%;
+    height:100%;
+    background-color: #3D3D3D;
+    border-radius: 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding:2vw 0  2vw 2vw;
+}
+#third h3,p{
+    color: rgba(245, 245, 245, 0.67);
+    font-weight: 100;
+}
+#fourth{
+    box-sizing: border-box;
+    width:100vw;
+    height:100vh;
+    padding:0 10vw;
+
+}
+#fourth 
