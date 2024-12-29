@@ -40,6 +40,7 @@ nav {
     padding: 1vw 8vw;
     background-color: #111111;
     border-bottom: 1px solid wheat;
+    z-index: 999;
 
 }
 #main{
@@ -224,14 +225,50 @@ nav:hover .dropdown{
     justify-content: center;
     align-items: center;
     padding: 0 10vw;
+    position: relative;
 }
 #second .video{
     width:100%;
     height:100%;
     background-color: bisque;
     border-radius:3vw;
+
     
 }
+#second .video video{
+    height: 100%;
+     width:100%;
+     object-fit: cover;
+     border-radius:2.8vw ;
+     transform: scaleX(1) scaleY(1);
+}
+#second .circle{
+    position: absolute;
+    height:8vw;
+    width:8vw;
+    border-radius:50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#0DA34E;
+    font-size: .8vw;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 2vw;
+    text-transform: uppercase;
+    transform: scale(0);
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s;
+    
+}
+#second .circle h4{
+    text-align: center;
+}
+/* #second .video:hover ~ .circle{
+    opacity: 1;
+    transform: scaleX(1) scaleY(1);
+
+} */
 #third{
     box-sizing: border-box;
     width:100vw;
@@ -310,5 +347,10 @@ nav:hover .dropdown{
     font-size: 1vw;
     font-family:  sans-serif;
     color: black;
+
+}
+#fifth{
+    width:100vw;
+    min-height:100vh;
 
 }
