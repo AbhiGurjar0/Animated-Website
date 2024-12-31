@@ -8,13 +8,14 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
     <!-- Include GSAP via CDN -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 
 </head>
 
 <body>
     <div id="main">
-        <nav>
+        <nav data-scroll-sticky data-scroll>
             <h1>LAZAREV.</h1>
             <div class="options">
                 <div class="drop">
@@ -71,7 +72,6 @@
 
         </nav>
         <div id="first">
-
             <p>
                 AI + Product Design Agency
             <p>
@@ -90,7 +90,7 @@
         </div>
         <div id="second">
             <div class="video">
-                <video  autoplay muted src="Resources/la-reel--min.mp4"></video>
+                <video muted src="Resources/la-reel--min.mp4"></video>
             </div>
             <div class="circle">
                 <i class="ri-arrow-right-up-line"></i>
@@ -101,26 +101,37 @@
             <div class="upper">
                 <div class="_box">
                     <p>/01</p>
-                    <div>
+                    <div class="t">
                         <h1>$500M+</h1>
                         <h3>in funding secured</h3>
                         <h3>for our clients</h3>
                     </div>
+                    <div class="video">
+                        <video src="Resources/money-vp9-chrome.webm"></video>
+                    </div>
                 </div>
                 <div class="_box">
+
                     <p>/02</p>
-                    <div>
+                    <div class=".t">
                         <h1>120+</h1>
                         <h3>Award backing</h3>
                         <h3>our excellence</h3>
                     </div>
+                    <div class="video">
+                        <video src="Resources/awards-vp9-chrome.webm"></video>
+                    </div>
+
                 </div>
                 <div class="_box">
                     <p>/03</p>
-                    <div>
+                    <div class=".t">
                         <h1>2015</h1>
                         <h3>Founded , 9 years</h3>
                         <h3>of experience</h3>
+                    </div>
+                    <div class="video">
+                        <video src="Resources/SF-vp9-chrome.webm"></video>
                     </div>
                 </div>
             </div>
@@ -142,23 +153,101 @@
                 </div>
             </div>
         </div>
-        <div id="fourth">
-            <div class="b1">Golden Standard in Ux + AI</div>
-            <div class="b2">Look we'vw been designing Ai experience since 2017, and we're not just dabbling in it;<br>
+        <div id="fourth" >
+            <div data-scroll data-scroll-speed="2" class="b1">Golden Standard in Ux + AI</div>
+            <div data-scroll data-scroll-speed="2" class="b2">
+                <p>Look we'vw been designing Ai experience since 2017, and we're not just dabbling in it;<br>
                 We
-                are Dominating . we've tackled Adtech, salestech , Finetech , Media -- you name it. </div>
-            <p>Want to see how we do it ?</p>
-            <div class="button">
+                are Dominating . we've tackled Adtech, salestech , Finetech , Media -- you name it.</p> </div>
+            <p data-scroll data-scroll-speed="2" >Want to see how we do it ?</p>
+            <div  data-scroll data-scroll-speed="2" class="button">
                 <h4>Check our UX+Ai Innovation here <i class="arrow ri-arrow-right-up-line"></i></h4>
             </div>
         </div>
-        <div class="fifth">
+        <div id="fifth">
+            <div class="left">
+                <div class="left-c">
+                    <h1> AI</h1>
+                    <p>Using Ai we design design for intutive solution that streamline operations and elevate user
+                        experiencetailored to your unique business need</p>
+                    <div class="Animation">
+                        <button>see all case studies</button>
+                        <i class="arrow ri-arrow-right-up-line"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="relem">
+                    <div class="relem-top">
+                        <h1>Pika AI</h1>
+                        <div class="relem-top-content">
+                            <p>Pika AI is a new and better search engine that harnesses AI technology and helps
+                                people find the most relevant and interesting information from across the web.</p>
+                            <div class="buttons">
+                                <button>UI Design </button>
+                                <button>Product design</button>
+                                <button>Experience Strategy</button>
+                                <button>UX research</button>
+                            </div>
+                        </div>
+                        <i class="arrow ri-arrow-right-up-line"></i>
+                    </div>
+                    <div class="image">
+                        <img src="Resources/Untitled.webp" alt="">
+                    </div>
+                    <div class="Vid">
+                        <video src="Resources/pika-cover-big-s.mp4"></video>
+                    </div>
+                    <div class="cir">
+                        <i class="ri-arrow-right-up-line"></i>
+                        <h4>Watch Our ShowReeL</h4>
+                    </div>
+                </div>
+
+                <div class="relem">
+                    <div class="relem-top">
+                        <h1>Accern. Rhea</h1>
+                        <div class="relem-top-content">
+                            <p>Founded by Accern, a front-runner in No-Code NLP, Rhea stands as a personalized
+                                AI
+                                Associate designed to streamline FinTech workflows.</p>
+                            <div class="buttons">
+                                <button>prototyping</button>
+                                <button>UX Strategy</button>
+                                <button>UIUx design</button>
+                                <button>Product design</button>
+                            </div>
+                        </div>
+                        <i class="arrow ri-arrow-right-up-line"></i>
+
+                    </div>
+                    <div class="image">
+                        <img src="Resources/Untitled 2.webp" alt="">
+                    </div>
+                    <div class="Vid">
+                        <video src="Resources/accern-rhea-cover-big.mp4"></video>
+                    </div>
+                    <div class="cir">
+                        <i class="ri-arrow-right-up-line"></i>
+                        <h4>view case study</h4>
+                    </div>
+                </div>
+
+            </div>
 
         </div>
     </div>
 
 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 
 </html>
